@@ -1,0 +1,85 @@
+# macOS 시스템 파일
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# .DocumentRevisions-V100 (사용자가 사용하지 않는 한 포함시키지 마세요)
+.DocumentRevisions-V100
+
+# 휴지통 파일
+.Trashes
+
+# Spotlight 색인
+.Spotlight-V100
+
+# 임시 파일이 저장되는 장소
+.TemporaryItems
+.Trashes
+.fseventsd
+
+# IntelliJ 프로젝트 파일
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# 빌드 출력 폴더
+target/
+build/
+out/
+
+# 패키징된 파일
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven 래퍼 파일
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle 래퍼 파일
+.gradle
+/build/
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
