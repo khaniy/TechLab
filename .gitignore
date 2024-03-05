@@ -1,37 +1,28 @@
-# macOS 시스템 파일
+### macOS System Files ###
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon
+Icon 
 ._*
 
-# .DocumentRevisions-V100 (사용자가 사용하지 않는 한 포함시키지 마세요)
-.DocumentRevisions-V100
-
-# 휴지통 파일
+### Trash and Temporary Files ###
 .Trashes
-
-# Spotlight 색인
-.Spotlight-V100
-
-# 임시 파일이 저장되는 장소
 .TemporaryItems
-.Trashes
 .fseventsd
 
-# IntelliJ 프로젝트 파일
+### IntelliJ IDEA Project Files ###
 .idea/
 *.iml
 *.ipr
 *.iws
 out/
 
-# 빌드 출력 폴더
+### Build Output Folders ###
 target/
 build/
 out/
 
-# 패키징된 파일
+### Packaged Files ###
 *.jar
 *.war
 *.nar
@@ -40,20 +31,18 @@ out/
 *.tar.gz
 *.rar
 
-# Maven 래퍼 파일
+### Maven Wrapper Files ###
 .mvn/wrapper/maven-wrapper.jar
 
-# Gradle 래퍼 파일
+### Gradle Wrapper and Related Files ###
 .gradle
 /build/
 HELP.md
-.gradle
-build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### STS ###
+### Spring Tool Suite (STS) ###
 .apt_generated
 .classpath
 .factorypath
@@ -61,25 +50,13 @@ build/
 .settings
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
+### NetBeans IDE ###
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
+### Visual Studio Code ###
 .vscode/
