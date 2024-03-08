@@ -1,0 +1,10 @@
+version: '3'
+services:
+    juicefs-container:
+        image: juicefs
+        environment:
+            JFS_ACCESS_KEY: "AKIAYNQKOAY4WYERQZEY"
+            JFS_SECRET_KEY: "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"
+            JFS_BUCKET: "hantest123"
+            JFS_DB: "postgres://postgres:1596@localhost:5432/postgres"
+        restart: unless-stopped
