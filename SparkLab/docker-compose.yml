@@ -1,10 +1,21 @@
-version: '3'
+version: '3.8'
 services:
-    juicefs-container:
+    juicefs:
         image: juicefs
+        command: >
+            juicefs format --storage s3
+                  --bucket ${OBJECT_STORAGE_BUCKET}
+                  --access-key ${JUICEFS_ACCESS_KEY}
+                  --secret-key ${JUICEFS_SECRET_KEY}
+                  ${DATABASE_URL}
+                  ${OBJECT_STORAGE_DIRECTORY}
         environment:
-            JFS_ACCESS_KEY: "AKIAYNQKOAY4WYERQZEY"
-            JFS_SECRET_KEY: "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"
-            JFS_BUCKET: "hantest123"
-            JFS_DB: "postgres://postgres:1596@localhost:5432/postgres"
-        restart: unless-stopped
+            - AWS_DEFAULT_REGION=${REGION}
+        volumes:
+            - ./mnt/jfs:/mnt/jfs
+        cap_add:
+            - SYS_ADMIN
+        devices:
+            - /dev/fuse
+        security_opt:
+            - apparmor:unconfined
